@@ -1,0 +1,259 @@
+/* Catalog.css */
+
+/* General container styles */
+.catalog {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: 60px auto;
+    border-radius: 20px;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for catalog container */
+.catalog:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styles */
+.catalog h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Book list container */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+    padding-top: 20px;
+}
+
+/* Book card design */
+.book-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+/* Hover effect for book card */
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+    background-color: #f7f9fc;
+}
+
+/* Book title styling */
+.book-card h2 {
+    font-size: 1.9rem;
+    color: #34495e;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for book title */
+.book-card:hover h2 {
+    color: #3498db;
+}
+
+/* Book details styling */
+.book-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+/* Emphasizing the price */
+.book-card p strong {
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+/* Price button styling */
+.book-card button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 25px;
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover effect for price button */
+.book-card button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Error message styling */
+.error {
+    color: #e74c3c;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .catalog {
+        padding: 50px 20px;
+    }
+
+    .catalog h1 {
+        font-size: 2.4rem;
+    }
+
+    .book-list {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+
+    .book-card {
+        padding: 20px;
+    }
+
+    .book-card h2 {
+        font-size: 1.7rem;
+    }
+
+    .book-card p {
+        font-size: 1rem;
+    }
+
+    .book-card button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog {
+        padding: 30px 15px;
+    }
+
+    .catalog h1 {
+        font-size: 2rem;
+    }
+
+    .book-card {
+        padding: 15px;
+    }
+
+    .book-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .book-card p {
+        font-size: 0.95rem;
+    }
+
+    .book-card button {
+        padding: 10px 18px;
+    }
+}
+
+
+/* Поиск */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.search label {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.search input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #3498db;
+}
+
+/* Сортировка */
+.sort-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sort-options label {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.sort-options select {
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.sort-options select:focus {
+    border-color: #3498db;
+}
+
+/* Стили для контейнера поиска и сортировки */
+.catalog-header {
+    margin-bottom: 40px;
+}
+
+/* Мобильная адаптация для поиска и сортировки */
+@media (max-width: 768px) {
+    .search input {
+        width: 100%;
+    }
+
+    .sort-options select {
+        width: 100%;
+    }
+}

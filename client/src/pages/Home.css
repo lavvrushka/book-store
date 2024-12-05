@@ -1,0 +1,74 @@
+/* Home.css */
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home page container */
+.home {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Home page header */
+.home h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+.home p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f4f4f4;
+    margin: 10px 0;
+}
+
+/* Styled date-time information block */
+.date-time-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.date-time-info p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.date-time-info p strong {
+    font-weight: bold;
+    color: #feb47b; /* Light orange color for emphasis */
+}
+
+/* Hover effect on the container */
+.home:hover {
+    transform: translateY(-10px); /* Smooth lift effect on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .home {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .home h2 {
+        font-size: 1.8rem;
+    }
+}

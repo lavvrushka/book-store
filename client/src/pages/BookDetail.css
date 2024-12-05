@@ -1,0 +1,155 @@
+/* BookDetail.css */
+
+.book-detail {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f3);
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1), -10px -10px 30px rgba(255, 255, 255, 0.7);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.book-detail h1 {
+    font-size: 2.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.book-detail strong {
+    color: #555;
+    font-weight: bold;
+}
+
+.book-detail .btn-buy {
+    display: inline-block;
+    margin: 20px auto 0;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.book-detail .btn-buy:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+    transform: translateY(-3px);
+}
+
+.book-detail .error {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    background: #ffe6e6;
+    padding: 10px;
+    border: 1px solid #ffcccc;
+    border-radius: 10px;
+}
+
+.book-detail h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #444;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.book-detail ul li {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.book-detail ul li:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(145deg, #ffffff, #f0f0f3);
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.15), -8px -8px 25px rgba(255, 255, 255, 0.8);
+}
+
+.book-detail ul li p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.book-detail ul li p strong {
+    display: inline-block;
+    min-width: 130px;
+}
+
+@media (max-width: 768px) {
+    .book-detail {
+        padding: 20px;
+    }
+
+    .book-detail h1 {
+        font-size: 2.2rem;
+    }
+
+    .book-detail .btn-buy {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .book-detail h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+.book-detail .star {
+    font-size: 1.2rem;
+    color: #ffd700; /* Золотой цвет для звезд */
+    margin-right: 2px;
+    transition: transform 0.2s;
+}
+
+.book-detail .star.full {
+    color: #ffd700; /* Полная звезда */
+}
+
+.book-detail .star.half {
+    color: #ffcc00; /* Половина звезды */
+}
+
+.book-detail .star.empty {
+    color: #ccc; /* Пустая звезда */
+}
+
+.book-detail .star:hover {
+    transform: scale(1.2);
+}
