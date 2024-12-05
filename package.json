@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "cd server && nodemon Index.js",
+    "start:client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.12.0"
+  },
+  "dependencies": {
+    "js-cookies": "^1.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0"
+  }
+}
